@@ -16,16 +16,16 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/users/**
+            - Path=/api/v1/users/**
         - id: technical-service
           uri: lb://technical-service
           predicates:
-            - Path=/technicals/**
+            - Path=/api/v1/technicals/**
         - id: appointment-service
           uri: lb://appointment-service
           predicates:
-            - Path=/appointments/**
+            - Path=/api/v1/appointments/**
         - id: publication-service
           uri: lb://publication-service
           predicates:
-            - Path=/publications/**
+            - Path=/api/v1/publications/**
