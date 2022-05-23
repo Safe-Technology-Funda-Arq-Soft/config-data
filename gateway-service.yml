@@ -28,6 +28,6 @@ spring:
           predicates:
             - Path=/appointments/**
         - id: publication-service
-            uri: lb://publication-service
-            predicates:
-              - Path=/publications/**
+          uri: lb://publication-service
+           predicates:
+            - Path=/publications/**
