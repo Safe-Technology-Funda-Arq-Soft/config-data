@@ -14,6 +14,8 @@ spring:
     url: jdbc:mysql://localhost:3306/technical-servicedb
     username: root
     password: root
+  main:
+    allow-bean-definition-overriding: true
 
   # ===============================
   # JPA / HIBERNATE
